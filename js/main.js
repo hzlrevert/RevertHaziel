@@ -30,13 +30,15 @@ if (user == usuario)
          }
          else{
             alert("Clave Incorrecta");
-            intento = intento +1;
-         if( intento == 3)
-               {
-            //return;
+            intento++;
             
-            window.alert("algo");
-         }
+            if(intento == 3)
+                  {
+                     alert("3ER INTENTO FALLIDO USUARIO BLOQUEADO");
+               exit;
+            
+               //window.alert("algo2");
+            }
           
             
          }
